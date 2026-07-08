@@ -44,12 +44,13 @@ The strategy is where the value is. The build is how I prove it.
 | System | Stack | Outcome |
 |---|---|---|
 | **AI Inbound Voice Agent** | n8n · Webhooks · Custom KB | **75%** of calls handled with no human · **−70%** ops cost · 24/7 — [case study →](case-studies/ai-voice-agent-homeware.md) |
-| **Cold Email Automation Engine** | n8n · Make · CRM | **−87%** manual outreach · 28% open / 8% reply · **10–12 meetings/mo** |
+| **Cold Email Automation Engine** | n8n · Make · CRM | **−87%** manual outreach · 28% open / 8% reply · **10–12 meetings/mo** — [case study →](case-studies/cold-email-engine-saas.md) |
 | **AI Lead Qualification & CRM Sync** | n8n · Apollo · LinkedIn · Slack | **10×** capacity · **500 leads/mo** · **−70%** research time |
 | **Order & Fulfillment Sync** | n8n · Shopify · Courier API · WhatsApp | **1,500+ orders/mo** on autopilot · **−95%** entry errors · 3 hrs/day saved |
 | **Abandoned Cart Recovery Engine** | n8n · Shopify · Email · WhatsApp | **14%** carts recovered · **+9%** monthly revenue · 0 manual follow-up |
 | **AI Applicant Screening Pipeline** | n8n · LLM · Sheets | **200+ CVs/opening** · **−80%** screening time · shortlist in 24 hrs |
-| **Automated Invoice Processing** | n8n · Gmail · LLM · Postgres · Xero | Month-end close from **3 days → near zero** |
+| **Internal Knowledge Chatbot** | n8n · Pinecone · Notion · Slack | Onboarding time **−50%** · answers cited to source — [case study →](case-studies/internal-knowledge-chatbot-fintech.md) |
+| **Automated Invoice Processing** | n8n · Gmail · LLM · Postgres · Xero | Month-end close from **3 days → near zero** — [case study →](case-studies/invoice-automation-logistics.md) |
 
 ---
 
@@ -66,8 +67,11 @@ The strategy is where the value is. The build is how I prove it.
 **[n8n Workflow Portfolio →](https://github.com/Redsf/N8N-workflows)**
 **73+ automation workflows**, each in its own folder with a full README — trigger, node-by-node flow, setup, and error handling. Many are the credential-free reference builds of the production systems above: cart recovery, review management, order sync, WhatsApp sales agent, invoice processing, RAG chatbots, and more.
 
-**[Case study: AI Voice Agent for a Homeware Brand →](case-studies/ai-voice-agent-homeware.md)**
-Problem → routing strategy → architecture diagram → reliability guardrails → results. The full story behind the 75%-automation number.
+**Case studies — problem → strategy → architecture → guardrails → results:**
+- [AI Voice Agent for a Homeware Brand →](case-studies/ai-voice-agent-homeware.md)
+- [Cold Email Engine for a B2B SaaS Platform →](case-studies/cold-email-engine-saas.md)
+- [Internal Knowledge Chatbot for a Fintech Company →](case-studies/internal-knowledge-chatbot-fintech.md)
+- [Invoice Automation for a Logistics Firm →](case-studies/invoice-automation-logistics.md)
 
 ---
 
@@ -97,7 +101,7 @@ Problem → routing strategy → architecture diagram → reliability guardrails
 - ✉️ Email — **redowanfarhan@gmail.com**
 - 📍 Dhaka, Bangladesh
 
-<sub>Open to freelance and full-time AI automation engineering roles.</sub>
+<sub>Open to freelance and full-time AI automation strategist / engineering roles.</sub>
 
 <p align="center">
   <img height="165" src="https://github-readme-stats.vercel.app/api?username=Redsf&show_icons=true&theme=tokyonight&hide_border=true&count_private=true" alt="stats"/>
