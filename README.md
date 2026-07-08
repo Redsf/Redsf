@@ -67,11 +67,14 @@ The strategy is where the value is. The build is how I prove it.
 **[n8n Workflow Portfolio →](https://github.com/Redsf/N8N-workflows)**
 **73+ automation workflows**, each in its own folder with a full README — trigger, node-by-node flow, setup, and error handling. Many are the credential-free reference builds of the production systems above: cart recovery, review management, order sync, WhatsApp sales agent, invoice processing, RAG chatbots, and more.
 
-**Case studies — problem → strategy → architecture → guardrails → results:**
-- [AI Voice Agent for a Homeware Brand →](case-studies/ai-voice-agent-homeware.md)
-- [Cold Email Engine for a B2B SaaS Platform →](case-studies/cold-email-engine-saas.md)
-- [Internal Knowledge Chatbot for a Fintech Company →](case-studies/internal-knowledge-chatbot-fintech.md)
-- [Invoice Automation for a Logistics Firm →](case-studies/invoice-automation-logistics.md)
+### 🚀 Flagship builds (standalone repos + case study each)
+
+| Repo | Production result | Case study |
+|---|---|---|
+| [ai-voice-agent-elevenlabs](https://github.com/Redsf/ai-voice-agent-elevenlabs) | 75% of calls handled with no human | [Read →](case-studies/ai-voice-agent-homeware.md) |
+| [cold-email-outreach-engine](https://github.com/Redsf/cold-email-outreach-engine) | 10–12 qualified meetings/mo | [Read →](case-studies/cold-email-engine-saas.md) |
+| [rag-internal-knowledge-chatbot](https://github.com/Redsf/rag-internal-knowledge-chatbot) | Onboarding time −50%, source-cited answers | [Read →](case-studies/internal-knowledge-chatbot-fintech.md) |
+| [invoice-extraction-ai](https://github.com/Redsf/invoice-extraction-ai) | Month-end close: 3 days → near zero | [Read →](case-studies/invoice-automation-logistics.md) |
 
 ---
 
