@@ -1,8 +1,8 @@
 <h1 align="center">Redowan Ahmed Farhan</h1>
 
 <p align="center">
-  <b>AI Automation Engineer</b> — n8n · AI Agents · RAG · LLM Pipelines<br/>
-  I build production automation systems that kill busywork and keep operations running 24/7.
+  <b>AI Automation Strategist</b> — n8n · AI Agents · RAG · LLM Pipelines<br/>
+  I decide what to automate, then build the systems that do it — measured in hours saved, errors killed, and revenue recovered.
 </p>
 
 <p align="center">
@@ -14,6 +14,17 @@
   <img src="https://img.shields.io/badge/Supabase-3FCF8E?style=for-the-badge&logo=supabase&logoColor=white" alt="Supabase"/>
   <img src="https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white" alt="PostgreSQL"/>
 </p>
+
+---
+
+### 🧭 How I approach automation
+
+1. **Map** the process and find the highest-cost manual step.
+2. **Decide** what to automate — and just as important, what to escalate to a human.
+3. **Build** with reliability first: retries, grounding, human-in-the-loop, error alerts.
+4. **Measure** the outcome in hours saved, errors removed, or revenue recovered.
+
+The strategy is where the value is. The build is how I prove it.
 
 ---
 
@@ -32,7 +43,7 @@
 
 | System | Stack | Outcome |
 |---|---|---|
-| **AI Inbound Voice Agent** | n8n · Webhooks · Custom KB | **75%** of calls handled with no human · **−70%** ops cost · 24/7 |
+| **AI Inbound Voice Agent** | n8n · Webhooks · Custom KB | **75%** of calls handled with no human · **−70%** ops cost · 24/7 — [case study →](case-studies/ai-voice-agent-homeware.md) |
 | **Cold Email Automation Engine** | n8n · Make · CRM | **−87%** manual outreach · 28% open / 8% reply · **10–12 meetings/mo** |
 | **AI Lead Qualification & CRM Sync** | n8n · Apollo · LinkedIn · Slack | **10×** capacity · **500 leads/mo** · **−70%** research time |
 | **Order & Fulfillment Sync** | n8n · Shopify · Courier API · WhatsApp | **1,500+ orders/mo** on autopilot · **−95%** entry errors · 3 hrs/day saved |
@@ -55,25 +66,28 @@
 **[n8n Workflow Portfolio →](https://github.com/Redsf/N8N-workflows)**
 **73+ automation workflows**, each in its own folder with a full README — trigger, node-by-node flow, setup, and error handling. Many are the credential-free reference builds of the production systems above: cart recovery, review management, order sync, WhatsApp sales agent, invoice processing, RAG chatbots, and more.
 
----
-
-### 🎓 Certifications
-
-- **Agentic AI Bootcamp: Python, n8n, MCP & RAG** — Udemy, 2026
-- **Complete AI Automation & Agentic AI** — Udemy, 2026
-- **n8n Automation: Build AI Agents & Workflows** — Udemy, 2026
-- **LangChain for LLM Application Development** — DeepLearning.AI, 2026
-- **ChatGPT Prompt Engineering for Developers** — DeepLearning.AI, 2026
+**[Case study: AI Voice Agent for a Homeware Brand →](case-studies/ai-voice-agent-homeware.md)**
+Problem → routing strategy → architecture diagram → reliability guardrails → results. The full story behind the 75%-automation number.
 
 ---
 
 ### 💬 What clients say
 
-> "Redowan's AI voice agent handles **three quarters of inbound calls end to end**, and the handover notes it leaves are better than what we wrote ourselves."
-> — *Oliver Bennett, Ecommerce Director (London, UK)*
+> ⭐⭐⭐⭐⭐ **75% inquiries automated**
+> "We were drowning in unanswered enquiries after our Q4 push. Redowan's AI voice agent now handles three quarters of inbound calls end to end, and the handover notes it leaves for my team are honestly better than what we wrote ourselves."
+> — *Oliver Bennett, Ecommerce Director — Homeware Brand, London, UK 🇬🇧*
 
-> "His cold email engine books us **10 to 12 qualified meetings a month** with reply detection and CRM sync baked in. My SDR got a full workday back every week."
-> — *Rachel Donovan, VP Sales, B2B SaaS (Austin, US)*
+> ⭐⭐⭐⭐⭐ **28% open rate · 87% time saved**
+> "I've hired three agencies that promised outbound magic and delivered spam. Redowan's cold email engine books us 10 to 12 qualified meetings a month with reply detection and CRM sync baked in. My SDR got a full workday back every week."
+> — *Rachel Donovan, VP Sales — B2B SaaS Platform, Austin, US 🇺🇸*
+
+> ⭐⭐⭐⭐⭐ **Onboarding time cut 50%**
+> "Our internal chatbot answers policy and product questions with source links attached and re-indexes our docs nightly. New-hire onboarding time dropped by half. Delivered in three weeks, exactly as scoped, not a day late."
+> — *Élodie Rousseau, People & Ops Lead — Fintech Company, Lyon, FR 🇫🇷*
+
+> ⭐⭐⭐⭐⭐ **3 days/month of manual work gone**
+> "The invoice pipeline he built, Gmail to extraction to Xero, took our month-end close from three days of manual entry to basically zero. Anything that doesn't match the vendor list gets flagged for my team, so nothing dodgy slips through."
+> — *Daniel Whitmore, Operations Director — Logistics Firm, Manchester, UK 🇬🇧*
 
 ---
 
