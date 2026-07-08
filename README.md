@@ -53,7 +53,7 @@
 ### 📌 Featured project
 
 **[n8n Workflow Portfolio →](https://github.com/Redsf/N8N-workflows)**
-**35+ automation workflows**, each in its own folder with a full README — trigger, node-by-node flow, setup, and error handling. Many are the credential-free reference builds of the production systems above: cart recovery, review management, order sync, WhatsApp sales agent, invoice processing, RAG chatbots, and more.
+**73+ automation workflows**, each in its own folder with a full README — trigger, node-by-node flow, setup, and error handling. Many are the credential-free reference builds of the production systems above: cart recovery, review management, order sync, WhatsApp sales agent, invoice processing, RAG chatbots, and more.
 
 ---
 
