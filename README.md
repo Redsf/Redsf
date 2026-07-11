@@ -108,5 +108,4 @@ The strategy is where the value is. The build is how I prove it.
 
 <p align="center">
   <img height="165" src="https://github-readme-stats.vercel.app/api?username=Redsf&show_icons=true&theme=tokyonight&hide_border=true&count_private=true" alt="stats"/>
-  <img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Redsf&layout=compact&theme=tokyonight&hide_border=true" alt="top langs"/>
 </p>
