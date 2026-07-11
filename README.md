@@ -65,7 +65,7 @@ The strategy is where the value is. The build is how I prove it.
 ### 📌 Featured project
 
 **[n8n Workflow Portfolio →](https://github.com/Redsf/n8n-workflows)**
-**73+ automation workflows**, each in its own folder with a full README — trigger, node-by-node flow, setup, and error handling. Many are the credential-free reference builds of the production systems above: cart recovery, review management, order sync, WhatsApp sales agent, invoice processing, RAG chatbots, and more.
+**63 automation workflows**, each in its own folder with a full README — trigger, node-by-node flow, setup, and error handling. Many are the credential-free reference builds of the production systems above: cart recovery, review management, order sync, WhatsApp sales agent, invoice processing, RAG chatbots, and more.
 
 🏅 **Official n8n creator** — selected workflows are published as templates on n8n's own marketplace: **[n8n.io/creators/redowanfarhan →](https://n8n.io/creators/redowanfarhan/)**
 
