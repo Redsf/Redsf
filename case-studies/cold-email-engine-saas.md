@@ -103,4 +103,4 @@ flowchart TD
 ---
 
 *Reference architecture for this build is the credential-free reference version in the workflow
-portfolio: [Cold Email Outreach Automation](https://github.com/Redsf/N8N-workflows/tree/main/cold_email_outreach_automation).*
+portfolio: [Cold Email Outreach Automation](https://github.com/Redsf/n8n-workflows/tree/main/cold_email_outreach_automation).*

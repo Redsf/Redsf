@@ -100,4 +100,4 @@ Automation that touches customers has to fail safely. Built in:
 ---
 
 *Reference architecture for this build lives in the workflow portfolio as a credential-free
-reference build: [AI Voice Chatbot (ElevenLabs)](https://github.com/Redsf/N8N-workflows/tree/main/voice_chatbot_elevenlabs_restaurants).*
+reference build: [AI Voice Chatbot (ElevenLabs)](https://github.com/Redsf/n8n-workflows/tree/main/voice_chatbot_elevenlabs_restaurants).*

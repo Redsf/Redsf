@@ -100,4 +100,4 @@ flowchart TD
 ---
 
 *Reference architecture for this build is the credential-free reference version in the workflow
-portfolio: [RAG-Powered Internal Knowledge Chatbot](https://github.com/Redsf/N8N-workflows/tree/main/rag_internal_knowledge_chatbot).*
+portfolio: [RAG-Powered Internal Knowledge Chatbot](https://github.com/Redsf/n8n-workflows/tree/main/rag_internal_knowledge_chatbot).*

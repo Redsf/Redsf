@@ -100,6 +100,6 @@ flowchart TD
 ---
 
 *Reference architecture for this build is the credential-free reference version in the workflow
-portfolio: [Invoice Extraction with LlamaParse](https://github.com/Redsf/N8N-workflows/tree/main/invoice_extraction_llamaparse)
+portfolio: [Invoice Extraction with LlamaParse](https://github.com/Redsf/n8n-workflows/tree/main/invoice_extraction_llamaparse)
 (vendor-matching and human-review routing shown here are the production-layer additions built on
 top of that reference pipeline for this client).*
