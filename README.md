@@ -52,6 +52,46 @@ The strategy is where the value is. The build is how I prove it.
 | **Internal Knowledge Chatbot** | n8n · Pinecone · Notion · Slack | Onboarding time **−50%** · answers cited to source — [case study →](case-studies/internal-knowledge-chatbot-fintech.md) |
 | **Automated Invoice Processing** | n8n · Gmail · LLM · Postgres · Xero | Month-end close from **3 days → near zero** — [case study →](case-studies/invoice-automation-logistics.md) |
 
+**How these are measured.** Every number above is a before-and-after on the same
+metric, not an estimate. Baseline is captured from the client's own records
+before anything is built — ticket volumes, time logs, close calendars, CRM
+exports. The after figure comes from the same source over a comparable window
+once the system has been live long enough to be representative. Percentages are
+against that baseline, never against an industry benchmark. Where a number is
+reported by the client rather than instrumented by me, the case study says so.
+
+---
+
+### 🧪 How I know a system works
+
+Anyone can ship a workflow that answers correctly in a demo. Production is where
+it answers confidently and wrongly at 2am.
+
+Every flagship build here carries an **automated eval suite** — test cases,
+scoring code, and a report you can regenerate before and after any prompt,
+model, or retrieval change:
+
+| Repo | Cases | What gets scored |
+|---|---|---|
+| [rag-internal-knowledge-chatbot](https://github.com/Redsf/rag-internal-knowledge-chatbot/tree/main/evals) | 23 | Correctness, groundedness, citation rate, prompt-injection resistance |
+| [ai-voice-agent-elevenlabs](https://github.com/Redsf/ai-voice-agent-elevenlabs/tree/main/evals) | 20 | Correctness, groundedness, **answer brevity** (TTS minutes are the bill), **escalation on safety-critical calls** |
+| [invoice-extraction-ai](https://github.com/Redsf/invoice-extraction-ai/tree/main/evals) | 12 | Field accuracy, hallucinated fields, omissions, line-item counts, arithmetic self-consistency — fully deterministic, no LLM judge |
+| [cold-email-outreach-engine](https://github.com/Redsf/cold-email-outreach-engine/tree/main/evals) | 12 | Deliverability, personalization, compliance, **fabricated claims about the lead** |
+
+The interesting cases are the adversarial ones: prompt injection embedded in a
+supplier's invoice PDF, a caller asking the voice agent to guarantee a dish is
+nut-free for a severe allergy, an injection planted in a scraped lead field. In
+each, the correct behaviour is to refuse or escalate — and that is what gets
+scored.
+
+Every repo also runs **CI on each push**: workflow JSON validation, a secret
+scan, a check that no real credential IDs have leaked, and a report on which
+workflows are missing error handling.
+
+Each build ships a **cost model** too — per-unit cost, the volume where the
+economics break, and an explicit list of conditions under which I'd tell you not
+to build it.
+
 ---
 
 ### 🧰 Tech I work with
@@ -65,7 +105,7 @@ The strategy is where the value is. The build is how I prove it.
 ### 📌 Featured project
 
 **[n8n Workflow Portfolio →](https://github.com/Redsf/n8n-workflows)**
-**63 automation workflows**, each in its own folder with a full README — trigger, node-by-node flow, setup, and error handling. Many are the credential-free reference builds of the production systems above: cart recovery, review management, order sync, WhatsApp sales agent, invoice processing, RAG chatbots, and more.
+**59 automation workflows**, each in its own folder with a full README — trigger, node-by-node flow, setup, and error handling. Many are the credential-free reference builds of the production systems above: cart recovery, review management, order sync, WhatsApp sales agent, invoice processing, RAG chatbots, and more.
 
 🏅 **Official n8n creator** — selected workflows are published as templates on n8n's own marketplace: **[n8n.io/creators/redowanfarhan →](https://n8n.io/creators/redowanfarhan/)**
 
