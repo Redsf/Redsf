@@ -1,8 +1,9 @@
 <h1 align="center">Redowan Ahmed Farhan</h1>
 
 <p align="center">
-  <b>AI Automation Strategist</b> — n8n · AI Agents · RAG · LLM Pipelines<br/>
-  I decide what to automate, then build the systems that do it — measured in hours saved, errors killed, and revenue recovered.
+  <b>AI Automation Strategist &amp; Engineer</b> — decision layer · AI agents · RAG · LLM pipelines<br/>
+  I decide what's worth automating, build it in whatever stack fits — n8n, Python, TypeScript — and prove the result.<br/>
+  I also build the tooling that keeps those systems honest: linting, evals, reliability patterns.
 </p>
 
 <p align="center">
@@ -96,7 +97,7 @@ to build it.
 
 ### 🧰 Tech I work with
 
-`n8n` · `OpenAI` · `Groq` · `Google Gemini` · `Mistral` · `LangChain` · `MCP`
+`n8n` · `Python` · `TypeScript` · `OpenAI` · `Groq` · `Google Gemini` · `Mistral` · `LangChain` · `MCP`
 `Pinecone` · `Supabase` · `Qdrant` · `PGVector` · `Python` · `JavaScript` · `PostgreSQL`
 `Gmail` · `Slack` · `WhatsApp` · `Telegram` · `Shopify` · `Google Workspace` · `Notion` · `Airtable`
 
@@ -108,6 +109,27 @@ to build it.
 **59 automation workflows**, each in its own folder with a full README — trigger, node-by-node flow, setup, and error handling. Many are the credential-free reference builds of the production systems above: cart recovery, review management, order sync, WhatsApp sales agent, invoice processing, RAG chatbots, and more.
 
 🏅 **Official n8n creator** — selected workflows are published as templates on n8n's own marketplace: **[n8n.io/creators/redowanfarhan →](https://n8n.io/creators/redowanfarhan/)**
+
+### 🛠️ Open-source tooling
+
+> Building automations is one job. Making them trustworthy is another. These are the tools I built for the second job — all tested, CI-green, and zero-dependency.
+
+| Repo | What it does |
+|---|---|
+| **[n8n-workflow-linter](https://github.com/Redsf/n8n-workflow-linter)** | Static analysis for n8n JSON — catches leaked credentials, hardcoded secrets, missing error handling. CLI + GitHub Action + pre-commit hook. |
+| **[agent-evals](https://github.com/Redsf/agent-evals)** | Evaluate any AI automation behind an HTTP endpoint. Deterministic-first graders plus adversarial checks: prompt injection, honest refusal, escalation. |
+| **[ai-automation-reliability-patterns](https://github.com/Redsf/ai-automation-reliability-patterns)** | Six patterns that decide whether an automation survives production — idempotency, retry classification, circuit breaking, dead-lettering, human-gates, budget caps. Working code, not principles. |
+| **[automation-roi-toolkit](https://github.com/Redsf/automation-roi-toolkit)** | Decide what's worth automating and prove the return. Counts the costs proposals omit: maintenance, exception handling, review time. Includes a worked example whose correct answer is "don't build it". |
+| **[mcp-n8n-ops](https://github.com/Redsf/mcp-n8n-ops)** | MCP server for operating n8n — ask an assistant what's failing, why, and since when. Read-only by default. |
+| **[n8n-selfhost-stack](https://github.com/Redsf/n8n-selfhost-stack)** | Production-shaped self-hosted n8n: queue mode, Postgres, Redis, TLS, backups, metrics. |
+
+### 🔬 [same-system-three-ways](https://github.com/Redsf/same-system-three-ways) — when should an automation be a workflow, and when should it be code?
+
+The same invoice-extraction problem built three ways — n8n, Python (FastAPI + Pydantic), TypeScript (Vercel AI SDK) — with one shared prompt, one schema, one eval suite. Then measured.
+
+**The finding:** cost per 1,000 documents was **identical to the cent** across all three (token cost is a property of the prompt, not the framework), and framework overhead was under 1% of user-facing latency. Cost and speed are a tie — **the real decision is operational**: who maintains it, how you review a change, how you test it.
+
+---
 
 ### 🚀 Flagship builds (standalone repos + case study each)
 
