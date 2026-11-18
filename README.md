@@ -16,25 +16,13 @@
   <img src="https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white" alt="PostgreSQL"/>
 </p>
 
----
-
-### 🧭 How I approach automation
-
-1. **Map** the process and find the highest-cost manual step.
-2. **Decide** what to automate — and just as important, what to escalate to a human.
-3. **Build** with reliability first: retries, grounding, human-in-the-loop, error alerts.
-4. **Measure** the outcome in hours saved, errors removed, or revenue recovered.
-
-The strategy is where the value is. The build is how I prove it.
-
----
-
-### 🤖 What I build
-
-- **AI agents** — inbound voice & chat agents that qualify leads, answer from a knowledge base, book appointments, and escalate to a human when unsure instead of hallucinating.
-- **RAG systems** — chatbots grounded in company docs (Pinecone, Supabase, Qdrant, PGVector) that re-index nightly and answer with source links attached.
-- **Business process automation** — abandoned-cart recovery, lead qualification & CRM sync, order/fulfillment pipelines, invoice extraction, applicant screening.
-- **Reliability built in** — retries, human-in-the-loop approvals, and error alerting to Slack on every production workflow.
+<p align="center">
+  <b>Open to freelance &amp; full-time roles</b><br/>
+  <a href="https://linkedin.com/in/redowan-ahmed-farhan">LinkedIn</a> ·
+  <a href="mailto:redowanfarhan@gmail.com">Email</a> ·
+  <a href="https://redowanahmed.netlify.app/">Website</a> ·
+  <a href="https://n8n.io/creators/redowanfarhan/">n8n creator profile</a>
+</p>
 
 ---
 
@@ -60,6 +48,45 @@ exports. The after figure comes from the same source over a comparable window
 once the system has been live long enough to be representative. Percentages are
 against that baseline, never against an industry benchmark. Where a number is
 reported by the client rather than instrumented by me, the case study says so.
+
+---
+
+### 🚀 Flagship builds (standalone repos + case study each)
+
+| Repo | Production result | Case study |
+|---|---|---|
+| [ai-voice-agent-elevenlabs](https://github.com/Redsf/ai-voice-agent-elevenlabs) | 75% of calls handled with no human | [Read →](case-studies/ai-voice-agent-homeware.md) |
+| [cold-email-outreach-engine](https://github.com/Redsf/cold-email-outreach-engine) | 10–12 qualified meetings/mo | [Read →](case-studies/cold-email-engine-saas.md) |
+| [rag-internal-knowledge-chatbot](https://github.com/Redsf/rag-internal-knowledge-chatbot) | Onboarding time −50%, source-cited answers | [Read →](case-studies/internal-knowledge-chatbot-fintech.md) |
+| [invoice-extraction-ai](https://github.com/Redsf/invoice-extraction-ai) | Month-end close: 3 days → near zero | [Read →](case-studies/invoice-automation-logistics.md) |
+
+---
+
+### 📌 Featured project
+
+**[n8n Workflow Portfolio →](https://github.com/Redsf/n8n-workflows)**
+**59 automation workflows**, each in its own folder with a full README — trigger, node-by-node flow, setup, and error handling. Many are the credential-free reference builds of the production systems above: cart recovery, review management, order sync, WhatsApp sales agent, invoice processing, RAG chatbots, and more.
+
+🏅 **Official n8n creator** — selected workflows are published as templates on n8n's own marketplace: **[n8n.io/creators/redowanfarhan →](https://n8n.io/creators/redowanfarhan/)**
+
+### 🛠️ Open-source tooling
+
+> Building automations is one job. Making them trustworthy is another. These are the tools I built for the second job — all tested, CI-green, and zero-dependency.
+
+| Repo | What it does |
+|---|---|
+| **[n8n-workflow-linter](https://github.com/Redsf/n8n-workflow-linter)** | Static analysis for n8n JSON — catches leaked credentials, hardcoded secrets, missing error handling. CLI + GitHub Action + pre-commit hook. |
+| **[agent-evals](https://github.com/Redsf/agent-evals)** | Evaluate any AI automation behind an HTTP endpoint. Deterministic-first graders plus adversarial checks: prompt injection, honest refusal, escalation. |
+| **[ai-automation-reliability-patterns](https://github.com/Redsf/ai-automation-reliability-patterns)** | Six patterns that decide whether an automation survives production — idempotency, retry classification, circuit breaking, dead-lettering, human-gates, budget caps. Working code, not principles. |
+| **[automation-roi-toolkit](https://github.com/Redsf/automation-roi-toolkit)** | Decide what's worth automating and prove the return. Counts the costs proposals omit: maintenance, exception handling, review time. Includes a worked example whose correct answer is "don't build it". |
+| **[mcp-n8n-ops](https://github.com/Redsf/mcp-n8n-ops)** | MCP server for operating n8n — ask an assistant what's failing, why, and since when. Read-only by default. |
+| **[n8n-selfhost-stack](https://github.com/Redsf/n8n-selfhost-stack)** | Production-shaped self-hosted n8n: queue mode, Postgres, Redis, TLS, backups, metrics. |
+
+### 🔬 [same-system-three-ways](https://github.com/Redsf/same-system-three-ways) — when should an automation be a workflow, and when should it be code?
+
+The same invoice-extraction problem built three ways — n8n, Python (FastAPI + Pydantic), TypeScript (Vercel AI SDK) — with one shared prompt, one schema, one eval suite. Then measured.
+
+**The finding:** cost per 1,000 documents was **identical to the cent** across all three (token cost is a property of the prompt, not the framework), and framework overhead was under 1% of user-facing latency. Cost and speed are a tie — **the real decision is operational**: who maintains it, how you review a change, how you test it.
 
 ---
 
@@ -95,50 +122,23 @@ to build it.
 
 ---
 
-### 🧰 Tech I work with
+### 🧭 How I approach automation
 
-`n8n` · `Python` · `TypeScript` · `OpenAI` · `Groq` · `Google Gemini` · `Mistral` · `LangChain` · `MCP`
-`Pinecone` · `Supabase` · `Qdrant` · `PGVector` · `Python` · `JavaScript` · `PostgreSQL`
-`Gmail` · `Slack` · `WhatsApp` · `Telegram` · `Shopify` · `Google Workspace` · `Notion` · `Airtable`
+1. **Map** the process and find the highest-cost manual step.
+2. **Decide** what to automate — and just as important, what to escalate to a human.
+3. **Build** with reliability first: retries, grounding, human-in-the-loop, error alerts.
+4. **Measure** the outcome in hours saved, errors removed, or revenue recovered.
 
----
-
-### 📌 Featured project
-
-**[n8n Workflow Portfolio →](https://github.com/Redsf/n8n-workflows)**
-**59 automation workflows**, each in its own folder with a full README — trigger, node-by-node flow, setup, and error handling. Many are the credential-free reference builds of the production systems above: cart recovery, review management, order sync, WhatsApp sales agent, invoice processing, RAG chatbots, and more.
-
-🏅 **Official n8n creator** — selected workflows are published as templates on n8n's own marketplace: **[n8n.io/creators/redowanfarhan →](https://n8n.io/creators/redowanfarhan/)**
-
-### 🛠️ Open-source tooling
-
-> Building automations is one job. Making them trustworthy is another. These are the tools I built for the second job — all tested, CI-green, and zero-dependency.
-
-| Repo | What it does |
-|---|---|
-| **[n8n-workflow-linter](https://github.com/Redsf/n8n-workflow-linter)** | Static analysis for n8n JSON — catches leaked credentials, hardcoded secrets, missing error handling. CLI + GitHub Action + pre-commit hook. |
-| **[agent-evals](https://github.com/Redsf/agent-evals)** | Evaluate any AI automation behind an HTTP endpoint. Deterministic-first graders plus adversarial checks: prompt injection, honest refusal, escalation. |
-| **[ai-automation-reliability-patterns](https://github.com/Redsf/ai-automation-reliability-patterns)** | Six patterns that decide whether an automation survives production — idempotency, retry classification, circuit breaking, dead-lettering, human-gates, budget caps. Working code, not principles. |
-| **[automation-roi-toolkit](https://github.com/Redsf/automation-roi-toolkit)** | Decide what's worth automating and prove the return. Counts the costs proposals omit: maintenance, exception handling, review time. Includes a worked example whose correct answer is "don't build it". |
-| **[mcp-n8n-ops](https://github.com/Redsf/mcp-n8n-ops)** | MCP server for operating n8n — ask an assistant what's failing, why, and since when. Read-only by default. |
-| **[n8n-selfhost-stack](https://github.com/Redsf/n8n-selfhost-stack)** | Production-shaped self-hosted n8n: queue mode, Postgres, Redis, TLS, backups, metrics. |
-
-### 🔬 [same-system-three-ways](https://github.com/Redsf/same-system-three-ways) — when should an automation be a workflow, and when should it be code?
-
-The same invoice-extraction problem built three ways — n8n, Python (FastAPI + Pydantic), TypeScript (Vercel AI SDK) — with one shared prompt, one schema, one eval suite. Then measured.
-
-**The finding:** cost per 1,000 documents was **identical to the cent** across all three (token cost is a property of the prompt, not the framework), and framework overhead was under 1% of user-facing latency. Cost and speed are a tie — **the real decision is operational**: who maintains it, how you review a change, how you test it.
+The strategy is where the value is. The build is how I prove it.
 
 ---
 
-### 🚀 Flagship builds (standalone repos + case study each)
+### 🤖 What I build
 
-| Repo | Production result | Case study |
-|---|---|---|
-| [ai-voice-agent-elevenlabs](https://github.com/Redsf/ai-voice-agent-elevenlabs) | 75% of calls handled with no human | [Read →](case-studies/ai-voice-agent-homeware.md) |
-| [cold-email-outreach-engine](https://github.com/Redsf/cold-email-outreach-engine) | 10–12 qualified meetings/mo | [Read →](case-studies/cold-email-engine-saas.md) |
-| [rag-internal-knowledge-chatbot](https://github.com/Redsf/rag-internal-knowledge-chatbot) | Onboarding time −50%, source-cited answers | [Read →](case-studies/internal-knowledge-chatbot-fintech.md) |
-| [invoice-extraction-ai](https://github.com/Redsf/invoice-extraction-ai) | Month-end close: 3 days → near zero | [Read →](case-studies/invoice-automation-logistics.md) |
+- **AI agents** — inbound voice & chat agents that qualify leads, answer from a knowledge base, book appointments, and escalate to a human when unsure instead of hallucinating.
+- **RAG systems** — chatbots grounded in company docs (Pinecone, Supabase, Qdrant, PGVector) that re-index nightly and answer with source links attached.
+- **Business process automation** — abandoned-cart recovery, lead qualification & CRM sync, order/fulfillment pipelines, invoice extraction, applicant screening.
+- **Reliability built in** — retries, human-in-the-loop approvals, and error alerting to Slack on every production workflow.
 
 ---
 
@@ -162,6 +162,14 @@ The same invoice-extraction problem built three ways — n8n, Python (FastAPI + 
 
 ---
 
+### 🧰 Tech I work with
+
+`n8n` · `Python` · `TypeScript` · `OpenAI` · `Groq` · `Google Gemini` · `Mistral` · `LangChain` · `MCP`
+`Pinecone` · `Supabase` · `Qdrant` · `PGVector` · `JavaScript` · `PostgreSQL`
+`Gmail` · `Slack` · `WhatsApp` · `Telegram` · `Shopify` · `Google Workspace` · `Notion` · `Airtable`
+
+---
+
 ### 📫 Reach me
 
 - 💼 LinkedIn — **[redowan-ahmed-farhan](https://linkedin.com/in/redowan-ahmed-farhan)**
@@ -170,7 +178,3 @@ The same invoice-extraction problem built three ways — n8n, Python (FastAPI + 
 - 📍 Dhaka, Bangladesh
 
 <sub>Open to freelance and full-time AI automation strategist / engineering roles.</sub>
-
-<p align="center">
-  <img height="165" src="https://github-readme-stats.vercel.app/api?username=Redsf&show_icons=true&theme=tokyonight&hide_border=true&count_private=true" alt="stats"/>
-</p>
